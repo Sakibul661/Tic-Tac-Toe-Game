@@ -1,6 +1,7 @@
 # Tic-Tac-Toe-Game
 
-Tic Tac Toe Game - Java 
+<b>Tic Tac Toe Game - Java</b> 
+<br>
 A classic Tic Tac Toe game built with Java featuring an unbeatable AI opponent using the Minimax algorithm.
 <br>
 
