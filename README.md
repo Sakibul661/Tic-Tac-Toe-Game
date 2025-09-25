@@ -7,8 +7,9 @@ A classic Tic Tac Toe game built with Java featuring an unbeatable AI opponent u
 
 About the Project
 This is a graphical Tic Tac Toe game implemented in Java using Swing for the user interface. The game features a sophisticated AI opponent that uses the Minimax algorithm to make optimal moves, making it virtually unbeatable. The interface is designed with a modern, dark theme and smooth gameplay.
-
+<br>
 Features
+
 🎮 Human vs AI gameplay (Player "Mr. X" vs AI)
 
 🧠 Unbeatable AI using Minimax algorithm with perfect play
@@ -29,8 +30,9 @@ Features
 
 📱 Responsive design with fixed window size
 
+<br>
+<b>Gameplay</b><br>
 
-Gameplay
 Controls
 Mouse Click: Click on any empty cell to place your mark (Mr. X)
 
