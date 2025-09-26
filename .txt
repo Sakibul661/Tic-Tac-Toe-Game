@@ -1,0 +1,8 @@
+TECHNICAL REQUIREMENTS:
+- Java Version: Java 8 or higher
+- GUI Framework: Swing (javax.swing)
+- Required Packages:
+  * javax.swing.*
+  * java.awt.*
+  * java.awt.event.*
+  * java.util.Arrays
