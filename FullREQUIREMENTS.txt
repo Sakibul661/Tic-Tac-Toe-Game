@@ -1,0 +1,111 @@
+TIC-TAC-TOE GAME REQUIREMENTS
+
+TECHNICAL REQUIREMENTS:
+- Java Version: Java 8 or higher
+- GUI Framework: Swing (javax.swing)
+- Required Packages:
+  * javax.swing.*
+  * java.awt.*
+  * java.awt.event.*
+  * java.util.Arrays
+
+GUI COMPONENTS:
+- Main Window: JFrame with title "Tic-Tac-Toe"
+- Game Grid: 3x3 grid of JButtons (9 buttons total)
+- Status Display: JLabel for game status messages
+- Control Button: JButton for "New Game" functionality
+- Layout Managers: BorderLayout (main), GridLayout (3x3 game grid), BoxLayout (south panel)
+
+VISUAL DESIGN REQUIREMENTS:
+- Background Color: Orange
+- Button Colors: Black background with white text
+- Player Colors:
+  * Human (Mr. X): Red text
+  * AI: Green text (RGB: 0,128,0)
+- Status Colors:
+  * Normal: White text
+  * Human Win: Green text
+  * AI Win: Red text
+  * Tie: Yellow text
+- Fonts: Arial, Bold
+  * Button Font: Size 40
+  * Status Font: Size 25
+  * Reset Button Font: Size 25
+- Button Dimensions: Preferred size 170x120 pixels
+- Window Settings: Non-resizable, centered on screen
+
+FUNCTIONAL REQUIREMENTS:
+GAMEPLAY:
+- Turn-based: Human vs AI
+- Human goes first as "Mr. X"
+- AI uses minimax algorithm for perfect play
+- Win condition checking for 8 possible patterns
+- Tie detection when board is full
+- Automatic AI move after human move (200ms delay)
+
+GAME LOGIC:
+- Minimax algorithm with recursive implementation
+- Score evaluation: AI win=1, Human win=-1, Tie=0
+- Optimal move selection for AI
+- Board state tracking using String array
+
+EVENT HANDLING:
+- Button click events for human moves
+- ActionListener for reset functionality
+- Timer for delayed AI responses (200ms)
+- Disable buttons after game conclusion
+
+STATUS MANAGEMENT:
+- Real-time status updates
+- Win/tie message display
+- Turn indication
+- Visual feedback through color changes
+
+RESET FUNCTIONALITY:
+- Clear game board
+- Reset all buttons to enabled state
+- Reset status message to initial state
+- Reset colors to default
+
+ALGORITHM REQUIREMENTS:
+- Minimax implementation with:
+  * Recursive depth-first search
+  * Board state evaluation
+  * Optimal move selection
+  * Score comparison and maximization/minimization
+- Win pattern checking for:
+  * Rows (3)
+  * Columns (3)
+  * Diagonals (2)
+
+SYSTEM REQUIREMENTS:
+- Java Runtime Environment (JRE) 8 or higher
+- Graphical display capability
+- Minimum screen resolution: 510x600 pixels
+- Event Dispatch Thread (EDT) compliance for Swing
+
+PERFORMANCE REQUIREMENTS:
+- Immediate response to human moves
+- AI move within 200ms delay
+- Smooth GUI updates
+- Efficient minimax algorithm execution
+
+ERROR HANDLING:
+- Prevent moves on occupied squares
+- Disable moves after game conclusion
+- Handle all game states appropriately
+- Thread-safe GUI updates
+
+USER INTERFACE REQUIREMENTS:
+- Intuitive 3x3 grid layout
+- Clear status messages
+- Visual distinction between players
+- Responsive buttons with hover effects
+- Professional appearance with bevel borders
+
+GAME RULES:
+- Human: "Mr. X" (plays first)
+- AI: "AI" (plays second)
+- Standard tic-tac-toe win conditions
+- Tie when board is full with no winner
+- Perfect AI play (cannot be beaten, only tied)
